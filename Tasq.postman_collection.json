@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "6a5f3f5e-2d16-40d8-b255-1a0ce881dad9",
+		"name": "Tasq",
+		"description": "This **Tasq API** Postman collection provides a complete set of RESTful endpoints for managing tasks in a simple Task Manager application. It is designed for learning, development, and testing of CRUD operations using **Node.js**, **Express**, and **MongoDB**.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46490544",
+		"_collection_link": "https://shudhansupamdey.postman.co/workspace/74aabce3-b77d-44e6-8adf-c1b77ad6474d/collection/46490544-6a5f3f5e-2d16-40d8-b255-1a0ce881dad9?action=share&source=collection_link&creator=46490544"
+	},
+	"item": [
+		{
+			"name": "GetAllTask",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/tasks/getall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"getall"
+					]
+				},
+				"description": "**Method:** `GET`  \n**URL:** `{{URL}}/tasks/all`\n\nReturns the full list of tasks with fields:\n\n- `_id`\n    \n- `name`\n    \n- `completed`\n    \n- `__v`"
+			},
+			"response": []
+		},
+		{
+			"name": "getTask",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/tasks/get/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"get",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				},
+				"description": "**Method:** `GET`  \n**URL:** `{{URL}}/tasks/get/:taskId`\n\nRetrieves **one task** using its MongoDB `_id`."
+			},
+			"response": []
+		},
+		{
+			"name": "createTask",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"description": "**Method:** `POST`  \n**URL:** `{{URL}}/tasks/create`  \n**Content-Type:** `application/json`"
+			},
+			"response": []
+		},
+		{
+			"name": "updateTask",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n  \"name\": \"Finish backend module\",\r\n  \"completed\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/tasks/update/6925f7797050319f14ce12d6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"update",
+						"6925f7797050319f14ce12d6"
+					]
+				},
+				"description": "StartFragment**Method:** `PATCH`  \n**URL:** `{{URL}}/tasks/update/:taskId`  \n**Content-Type:** `application/json`EndFragment"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTask",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " "
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/tasks/delete/6925f7797050319f14ce12d6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"delete",
+						"6925f7797050319f14ce12d6"
+					]
+				},
+				"description": "**Method:** `PATCH`  \n**URL:** `{{URL}}/tasks/update/:taskId`  \n**Content-Type:** `application/json`"
+			},
+			"response": []
+		}
+	]
+}
