@@ -58,7 +58,7 @@ task-manager-api/
 ├── package.json
 ├── package-lock.json
 └── README.md
-└── Task Manager API.postman_collection.json
+└── Tasq.postman_collection.json
 ```
 
 ---
@@ -69,7 +69,7 @@ task-manager-api/
 
 ```bash
 git clone  
-cd task-manager-api
+cd tasq-api
 ```
 
 ### 2. Install Dependencies
@@ -178,7 +178,7 @@ res.status(500).json({ msg: err.message || 'Internal Server Error' });
 
 A complete Postman collection is available to test all routes.
 
-### Collection Name: `Task Manager API`
+### Collection Name: `Tasq API`
 
 | Name            | Method | URL                       | Body (if any)          |
 |-----------------|--------|---------------------------|------------------------|
