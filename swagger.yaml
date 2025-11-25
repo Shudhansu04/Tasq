@@ -5,7 +5,7 @@ info:
   description: A simple REST API for managing tasks using Express and MongoDB.
 
 servers:
-  - url:  
+  - url: https://tasq-huml.onrender.com/api/v1/tasks
     description: Production server (Render)
   - url: http://localhost:3000/api/v1/tasks
     description: Local development server
