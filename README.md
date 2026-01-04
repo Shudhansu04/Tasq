@@ -10,7 +10,7 @@ A simple and clean RESTful API to manage tasks, built with **Node.js**, **Expres
 - Swagger Docs URL: [Click Here](https://tasq-huml.onrender.com/api-docs/)
 - Format: YAML-based (`swagger.yaml`)
 - Tool: Swagger UI Express + YAML parser
-- Postman Documentation available :- [Click Here](https://shudhansupamdey.postman.co/workspace/74aabce3-b77d-44e6-8adf-c1b77ad6474d/collection/46490544-6a5f3f5e-2d16-40d8-b255-1a0ce881dad9?action=share&source=collection_link&creator=46490544)
+- Postman Documentation available :- [Click Here](https://documenter.getpostman.com/view/46490544/2sBXVcmCtC)
 
 ---
 
